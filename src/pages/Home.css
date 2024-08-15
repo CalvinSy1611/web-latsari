@@ -19,7 +19,185 @@
 }
 
 .fade-in {
-    opacity: 0;
+    opacity: 0;/* Gaya untuk WelcomeSection */
+    .welcome-section {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        height: 400px; /* Sesuaikan tinggi sesuai kebutuhan */
+        overflow: hidden;
+    }
+    
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+    
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s forwards;
+    }
+    
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Gaya untuk image-item */
+    .image-item {
+        position: relative;
+        width: 100%; /* Mengubah lebar menjadi 100% untuk layar kecil */
+        max-width: 300px; /* Ukuran maksimal gambar pada layar besar */
+        text-align: center;
+        overflow: hidden; /* Untuk memastikan efek zoom tidak mempengaruhi layout */
+        padding: 0.5rem; /* Menambahkan padding untuk jarak antara gambar dan elemen lainnya */
+        margin: 0 auto; /* Mengatur margin otomatis agar gambar berada di tengah */
+    }
+    
+    .image-item img {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s ease; /* Menambahkan transisi untuk efek zoom */
+    }
+    
+    /* Caption dengan jarak antara gambar */
+    .image-item .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan untuk meningkatkan keterbacaan */
+        color: #ffffff; /* Warna teks putih untuk kontras */
+        padding: 0.5rem;
+        border-radius: 0 0 8px 0;
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box; /* Menghitung padding dalam lebar elemen */
+        transition: transform 0.3s ease; /* Menambahkan transisi untuk pergerakan caption */
+    }
+    
+    /* Gaya untuk arrow */
+    .image-item .arrow {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: #ffffff; /* Warna teks putih untuk kontras */
+        padding: 0.5rem;
+        border-radius: 0 0 0 8px;
+        text-align: right;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: transform 0.3s ease; /* Menambahkan transisi untuk pergerakan arrow */
+        box-sizing: border-box; /* Menghitung padding dalam lebar elemen */
+    }
+    
+    /* Efek hover untuk zoom gambar, pergerakan caption, dan arrow */
+    .image-item:hover img {
+        transform: scale(1.1); /* Zoom gambar */
+    }
+    
+    .image-item:hover .caption {
+        transform: translateX(10px); /* Menggerakkan caption ke kanan saat hover */
+    }
+    
+    .image-item:hover .arrow {
+        transform: translateX(10px); /* Menggerakkan arrow ke kanan saat hover */
+    }
+    
+    /* Jarak tambahan antara bagian-bagian */
+    .margin-bottom-large {
+        margin-bottom: 4rem; /* Sesuaikan jarak sesuai kebutuhan */
+    }
+    
+    /* Menempatkan top images di atas welcome section */
+    .top-images-wrapper {
+        position: relative;
+        margin-top: -200px; /* Menyesuaikan jarak sesuai kebutuhan */
+        z-index: 1; /* Memastikan berada di atas welcome-section */
+    }
+    
+    /* Gaya untuk Deskripsi Desa dan Wilayah */
+    .village-description-container {
+        display: flex;
+        flex-direction: row; /* Menampilkan konten secara horizontal */
+        margin: 5rem 0; /* Jarak antara deskripsi desa dengan bagian lain */
+        padding-left: 2rem; /* Jarak dari kiri */
+        flex-wrap: wrap; /* Mengatur konten agar membungkus pada layar kecil */
+    }
+    
+    .village-description-content {
+        flex: 1;
+        padding-right: 2rem; /* Jarak di sebelah kanan */
+    }
+    
+    .village-description-content h3 {
+        font-weight: 650; /* Membuat teks Deskripsi Desa menjadi semi-bold */
+        margin-bottom: 1.5rem; /* Menambahkan jarak antara judul dan paragraf */
+    }
+    
+    .village-description-content p {
+        text-align: justify; /* Membuat paragraf berformat justify */
+    }
+    
+    /* Menambahkan jarak antara deskripsi desa dan deskripsi wilayah */
+    .village-description-separator {
+        margin-bottom: 2rem; /* Menambahkan jarak antara deskripsi desa dan deskripsi wilayah */
+    }
+    
+    .village-description-left,
+    .village-description-right {
+        flex: 1;
+        padding-left: 4rem; /* Jarak di sebelah kiri */
+        padding-right: 4rem; /* Jarak di sebelah kanan */
+    }
+    
+    /* Menata ulang tabel untuk layar kecil */
+    @media (max-width: 768px) {
+        .image-item {
+            width: 80%; /* Mengatur lebar gambar menjadi 80% dari lebar kontainer */
+            max-width: 200px; /* Memberikan batas maksimal pada ukuran gambar */
+            margin: 0 auto 1rem; /* Mengatur margin agar gambar tetap berada di tengah dengan jarak bawah */
+        }
+    
+        .village-description-container {
+            flex-direction: column; /* Mengatur tata letak menjadi kolom pada layar kecil */
+        }
+    
+        .village-description-content,
+        .village-description-right {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    
+        .village-description-right {
+            order: 2; /* Memastikan tabel berada di bawah deskripsi desa */
+            margin-top: 2rem;
+        }
+    }
+    .info-table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      .info-table th, .info-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      
+      .info-table th {
+        background-color: #f0f0f0;
+      }
     transform: translateY(20px);
     animation: fadeInUp 1s forwards;
 }

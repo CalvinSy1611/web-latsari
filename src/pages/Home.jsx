@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import bgImage from '../assets/bg.png'; // Ganti dengan path yang sesuai
-import image1 from '../assets/logo.png'; // Ganti dengan path gambar yang sesuai
-import image2 from '../assets/logo.png';
-import image3 from '../assets/logo.png';
-import image4 from '../assets/logo.png'; // Gambar tambahan
-import image5 from '../assets/struktur2.JPG'; // Gambar tambahan
+
+import image4 from '../assets/visi-misi.png'; // Gambar tambahan
+import image5 from '../assets/struktur.png'; // Gambar tambahan
 import image6 from '../assets/sejarah1.JPG'; // Gambar tambahan
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
