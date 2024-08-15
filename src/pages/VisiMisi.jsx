@@ -5,14 +5,6 @@ const VisiMisi = () => {
     <div className="container mx-auto p-4 pt-24">
       <h1 className="text-3xl font-bold mb-4">Visi dan Misi</h1>
       
-      {/* Penjelasan Umum Visi dan Misi */}
-      <p className="mb-4 text-justify">
-        Proses penyusunan RPJM Desa Latsari sebagai pedoman program kerja pemerintah Desa Latsari ini 
-        dilakukan oleh lembaga-lembaga tingkat Desa dan seluruh warga masyarakat Latsari maupun para pihak 
-        yang berkepentingan. RPJM Desa adalah pedoman program kerja untuk masa 6 (enam) tahun yang merupakan 
-        turunan dari sebuah cita-cita yang ingin dicapai di masa depan oleh segenap warga masyarakat Desa Latsari. 
-      </p>
-      
       {/* Penjelasan Visi */}
       <p className="mb-4 text-justify">
         Visi adalah rumusan umum mengenai keadaan yang dinginkan pada akhir periode penyelenggaraan pemerintahan desa. 
