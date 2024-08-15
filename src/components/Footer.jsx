@@ -10,9 +10,8 @@ const Footer = () => {
         <div className="mb-8 md:mb-0 md:w-1/3 lg:w-auto md:ml-8"> {/* Mengatur lebar dengan md:w-1/3 */}
           <h3 className="text-xl md:text-2xl font-semibold mb-4">Alamat Desa</h3>
           <p className="text-gray-300 mb-2 text-sm md:text-base"> {/* Mengubah ukuran font untuk responsif */}
-            Jl. Raya Desa Latsari No. 123, <br />
-            Latsari, Mojowarno, Jombang Regency, <br />
-            East Java, Indonesia
+            Desa Latsari, Kec. Mojowarno, Kab. Jombang, <br />
+            Jawa Timur, Indonesia
           </p>
         </div>
 
