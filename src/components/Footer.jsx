@@ -29,10 +29,10 @@ const Footer = () => {
         <div className="mb-8 md:mb-0 md:w-1/3 lg:w-auto md:mr-8"> {/* Mengatur lebar dengan md:w-1/3 */}
           <h3 className="text-xl md:text-2xl font-semibold mb-4">Sosial Media</h3>
           <div className="flex justify-center md:justify-start space-x-4">
-            <a href="https://facebook.com/desakami" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
               <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
-            <a href="https://twitter.com/desakami" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
               <FontAwesomeIcon icon={faTwitter} size="2x" />
             </a>
             <a href="https://instagram.com/kkn2_kelompok6_desaLatsari" target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:underline">
