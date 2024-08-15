@@ -14,16 +14,18 @@ const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between p-4">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Latsari Logo" className="h-11 w-18" />
-          <h1 className="text-3xl font-semibold ml-2 text-white">Desa Latsari</h1>
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold ml-2 text-white">
+            Desa Latsari
+          </h1>
         </Link>
         <nav className="relative">
           <ul className="flex items-center space-x-4">
-            <li><Link to="/" className="hover:underline px-4 py-2 text-white">Beranda</Link></li>
+            <li><Link to="/" className="hover:underline px-2 sm:px-4 py-2 text-white">Beranda</Link></li>
             {/* Menu Dusun */}
             <li className="relative">
               <button
                 onClick={toggleDusunMenu}
-                className="flex items-center hover:underline px-4 py-2 text-white"
+                className="flex items-center hover:underline px-2 sm:px-4 py-2 text-white"
               >
                 Dusun
                 <svg
@@ -49,7 +51,7 @@ const Header = () => {
                 </ul>
               )}
             </li>
-            <li><Link to="/contact" className="hover:underline px-4 py-2 text-white">Informasi</Link></li>
+            <li><Link to="/contact" className="hover:underline px-2 sm:px-4 py-2 text-white">Informasi</Link></li>
           </ul>
         </nav>
       </div>
