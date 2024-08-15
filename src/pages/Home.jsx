@@ -90,10 +90,7 @@ const VillageDescription = () => {
             </tr>
             <tr>
               <td>Luas Wilayah</td>
-              <td>221,20 HA</td>
-            </tr><tr>
-              <td>Luas Pertanian</td>
-              <td>156,7 HA</td>
+              <td>221 Ha</td>
             </tr>
           </tbody>
         </table>
